@@ -10,4 +10,8 @@ public class BobApplication {
     SpringApplication.run(BobApplication.class, args);
   }
 
+  @GetMapping("/hello")
+  public String hello(){
+    return "Hello from Bob!";
+  }
 }
